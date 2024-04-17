@@ -23,3 +23,8 @@ then the stack will failed to compile ..
 When stack compiling need t include extra flag
 
     export C_INCLUDE_PATH="`xcrun --show-sdk-path`/usr/include/ffi"; stack build
+
+
+# Conclusion
+
+It seems that Template Haskell make a stricter changes since solver-lts-19.33. The circular reference is not allowed.
